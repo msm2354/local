@@ -4,7 +4,8 @@
   <!-- Device Tree -->
   <project path="device/huawei/hwY635" name="HUAWEI-MSM8916/android_device_huawei_hwY635" remote="github" revision="cm-14.1" />
   <project path="device/huawei/msm8916-common" name="HUAWEI-MSM8916/android_device_huawei_msm8916-common" remote="github" revision="cm-14.1" />
- 
+  <project path="device/cyanogen/msm8916-common" name="LineageOS/android_device_cyanogen_msm8916-common" remote="github" revision="cm-14.1" />
+  
   <!-- Vendor -->
   <project path="vendor/huawei" name="HUAWEI-MSM8916/proprietary_vendor_huawei" remote="github" revision="cm-14.1" />
   
