@@ -13,11 +13,11 @@ Next, naviate into that new directory via the terminal:
 
 To initialize your local repository using the Turbo ROM trees, use this command:
 
-	repo init -u git://github.com/LineageOS/android.git -b cm-14.1
+	repo init -u git://github.com/LineageOS/android.git -b lineage-15.0
 
 Also add the local manifests:
 
-	git clone https://github.com/HUAWEI-MSM8916/local_manifest -b cm-14.1 .repo/local_manifests
+	git clone https://github.com/HUAWEI-MSM8916/local_manifest -b lineage-15.0 .repo/local_manifests
 
 Then sync up with this command:
 
