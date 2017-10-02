@@ -6,7 +6,7 @@
   <project path="device/cyanogen/msm8916-common" name="LineageOS/android_device_cyanogen_msm8916-common" remote="github" revision="cm-14.1" />
   
   <!-- Vendor -->
-  <project path="vendor/huawei" name="HUAWEI-MSM8916/proprietary_vendor_huawei" remote="github" revision="cm-14.1" />
+  <project path="vendor/huawei" name="CarlosArriagaCM/proprietary_vendor_huawei" remote="github" revision="cm-14.1" />
   
   <!-- Kernel -->
   <project path="kernel/huawei/hwY635" name="CarlosArriagaCM/android_kernel_huawei_hwY635" remote="github" revision="cm-14.1-new" />
