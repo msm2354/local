@@ -3,23 +3,15 @@
   
   <remove-project path="bionic" name="LineageOS/android_bionic" groups="pdk" />
   <remove-project path="build" name="LineageOS/android_build" groups="pdk" />
-  <remove-project path="build/kati" name="LineageOS/android_build_kati" groups="pdk" />
-  <remove-project path="build/soong" name="LineageOS/android_build_soong" groups="pdk" />
-
   <remove-project path="frameworks/av" name="LineageOS/android_frameworks_av" groups="pdk" />
-  <remove-project path="frameworks/native" name="LineageOS/android_frameworks_native" groups="pdk" />
-  <remove-project path="external/tinycompress" name="LineageOS/android_external_tinycompress" groups="pdk" />
-  <remove-project path="hardware/libhardware" name="LineageOS/android_hardware_libhardware" groups="pdk" />
-  <remove-project path="system/core" name="LineageOS/android_system_core" groups="pdk" />
+  <remove-project path="hardware/qcom/keymaster" name="LineageOS/android_hardware_qcom_keymaster" groups="qcom,qcom_keymaster,pdk" />
   <remove-project path="system/bt" name="LineageOS/android_system_bt" groups="pdk" />
-  <remove-project path="system/media" name="LineageOS/android_system_media" groups="pdk" />
+  <remove-project path="system/core" name="LineageOS/android_system_core" groups="pdk" />
+  <remove-project path="system/qcom" name="LineageOS/android_system_qcom" groups="pdk" />
+  <remove-project path="system/sepolicy" name="LineageOS/android_system_sepolicy" groups="pdk" />
   <remove-project path="vendor/lineage" name="LineageOS/android_vendor_lineage" groups="pdk" />   
-  <remove-project path="hardware/qcom/display" name="LineageOS/android_hardware_qcom_display" groups="pdk" />
-  <remove-project path="hardware/qcom/media" name="LineageOS/android_hardware_qcom_media" groups="pdk" />
-  <remove-project path="hardware/qcom/audio" name="LineageOS/android_hardware_qcom_audio" groups="pdk" />
-  <remove-project path="hardware/qcom/bt" name="LineageOS/android_hardware_qcom_bt" groups="pdk" />
-  
-   <project path="build/make" name="oreo-victara/android_build" revision="lineage-15.0" remote="github" >
+
+  <project path="build/make" name="oreo-victara/android_build" revision="lineage-15.0" remote="github" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -27,47 +19,23 @@
     <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
-   </project>
-
-   <project path="build/kati" name="oreo-victara/android_build_kati" revision="lineage-15.0" remote="github" />
-
-   <project path="build/soong" name="oreo-victara/android_build_soong" revision="lineage-15.0" remote="github" >
-    <linkfile src="root.bp" dest="Android.bp" />
-    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
-   </project> 
+  </project>
 
   <project path="bionic" name="oreo-victara/android_bionic" revision="lineage-15.0" remote="github"/>
-  <project path="external/tinycompress" name="oreo-victara/android_external_tinycompress" revision="lineage-15.0" remote="github"/>
   <project path="frameworks/av" name="oreo-victara/android_frameworks_av" revision="lineage-15.0" remote="github"/>
-  <project path="frameworks/native" name="oreo-victara/android_frameworks_native" revision="lineage-15.0" remote="github"/>
-  <project path="hardware/libhardware" name="oreo-victara/android_hardware_libhardware" revision="lineage-15.0" remote="github"/>
-
-  <project path="hardware/qcom/audio" name="oreo-victara/android_hardware_qcom_audio" revision="lineage-15.0" remote="github"/>
-  <project path="hardware/qcom/audio-caf/msm8974" name="oreo-victara/android_hardware_qcom_audio" revision="lineage-15.0-caf-8974" remote="github"/>
-  <project path="hardware/qcom/display" name="oreo-victara/android_hardware_qcom_display" revision="lineage-15.0" remote="github"/>
-  <project path="hardware/qcom/display-caf/msm8974" name="oreo-victara/android_hardware_qcom_display" revision="lineage-15.0-caf-8974" remote="github"/>
-  <project path="hardware/qcom/media" name="oreo-victara/android_hardware_qcom_media" revision="lineage-15.0" remote="github"/>
-  <project path="hardware/qcom/media-caf/msm8974" name="oreo-victara/android_hardware_qcom_media" revision="lineage-15.0-caf-8974" remote="github"/>
-  <project path="hardware/qcom/bt-caf" name="oreo-victara/android_hardware_qcom_bt" revision="lineage-15.0" remote="github"/>
-  <project path="hardware/qcom/bt" name="oreo-victara/android_hardware_qcom_bt" revision="lineage-15.0-caf" remote="github"/>
-
+  <project path="hardware/qcom/keymaster" name="oreo-victara/android_hardware_qcom_keymaster" revision="lineage-15.0" remote="github" />
   <project path="system/bt" name="oreo-victara/android_system_bt" revision="lineage-15.0" remote="github"/>
   <project path="system/core" name="oreo-victara/android_system_core" revision="lineage-15.0" remote="github"/>
-  <project path="system/media" name="oreo-victara/android_system_media" revision="lineage-15.0" remote="github"/>
+  <project path="system/qcom" name="oreo-victara/android_system_qcom" revision="lineage-15.0" remote="github"/>
+  <project path="system/sepolicy" name="oreo-victara/android_system_sepolicy" revision="lineage-15.0" remote="github"/>
   <project path="vendor/lineage" name="oreo-victara/android_vendor_lineage" revision="lineage-15.0" remote="github"/>
+  <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" revision="lineage-15.0" remote="github"/>
+  <project path="device/qcom/common" name="LineageOS/android_device_qcom_common" revision="lineage-15.0" remote="github"/>
 
   <!-- Device Tree -->
   <project path="device/huawei/hwY635" name="HUAWEI-MSM8916/android_device_huawei_hwY635" remote="github" revision="lineage-15.0" />
-  <project path="device/huawei/msm8916-common" name="HUAWEI-MSM8916/android_device_huawei_msm8916-common" remote="github" revision="lineage-15.0" />
-  <project path="device/cyanogen/msm8916-common" name="yureka-o/android_device_cyanogen_msm8916-common" remote="github" revision="o" />
-  
-  <!-- Vendor -->
+  <project path="device/cyanogen/msm8916-common" name="8916Devs/android_device_cyanogen_msm8916-common" remote="github" revision="lineage-15.0" />
   <project path="vendor/huawei" name="HUAWEI-MSM8916/proprietary_vendor_huawei" remote="github" revision="cm-14.1" />
-  
-  <!-- Kernel -->
-  <project path="kernel/huawei/hwY635" name="HUAWEI-MSM8916/android_kernel_huawei_hwY635" remote="github" revision="lineage-15.0" />
-    
-  <!-- Extra packages -->
-  <project path="device/qcom/common" name="LineageOS/android_device_qcom_common" remote="github" revision="lineage-15.0" />
+  <project path="kernel/huawei/hwY635" name="HUAWEI-MSM8916/android_kernel_huawei_hwY635" remote="github" revision="lineage-15.0-new" />
   
 </manifest>
