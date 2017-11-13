@@ -36,6 +36,6 @@
   <project path="device/huawei/hwY635" name="HUAWEI-MSM8916/android_device_huawei_hwY635" remote="github" revision="lineage-15.0" />
   <project path="device/cyanogen/msm8916-common" name="8916Devs/android_device_cyanogen_msm8916-common" remote="github" revision="lineage-15.0" />
   <project path="vendor/huawei" name="HUAWEI-MSM8916/proprietary_vendor_huawei" remote="github" revision="cm-14.1" />
-  <project path="kernel/huawei/hwY635" name="HUAWEI-MSM8916/android_kernel_huawei_hwY635" remote="github" revision="lineage-15.0" />
+  <project path="kernel/huawei/hwY635" name="HUAWEI-MSM8916/android_kernel_huawei_hwY635" remote="github" revision="lineage-15.0-new" />
   
 </manifest>
