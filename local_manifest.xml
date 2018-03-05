@@ -2,7 +2,7 @@
 <manifest>
 
   <!-- Device Tree -->
-  <project path="device/huawei/hwY635" name="msm2354/android_device_huawei" remote="github" revision="cm-14.1" />
+  <project path="device/huawei/hwY635" name="msm2354/android_device_huawei" remote="github" revision="dot-n" />
   <project path="device/cyanogen/msm8916-common" name="LineageOS/android_device_cyanogen_msm8916-common" remote="github" revision="cm-14.1" />
   
   <!-- Vendor -->
