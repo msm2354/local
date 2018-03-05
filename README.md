@@ -17,7 +17,7 @@ To initialize your local repository using the Turbo ROM trees, use this command:
 
 Also add the local manifests:
 
-	git clone https://github.com/msm2354/local_manifest -b dot-n .repo/local_manifests
+	git clone https://github.com/msm2354/local_manifest dot-n .repo/local_manifests
 
 Then sync up with this command:
 
