@@ -1,23 +1,23 @@
-LineageOS For Huawei Y635 LTE
+dotOS  For Huawei Y635 LTE
 =============================
 
 Initializing:
 
 First, create a folder to hold the source code: 
 
-	mkdir ~/lineage
+	mkdir ~/dot
 
 Next, naviate into that new directory via the terminal:
 
-	cd ~/lineage
+	cd ~/dot
 
 To initialize your local repository using the Turbo ROM trees, use this command:
 
-	repo init -u git://github.com/LineageOS/android.git -b cm-14.1
+	repo init -u git://github.com/DotOS/manifest.git -b dot-n
 
 Also add the local manifests:
 
-	git clone https://github.com/msm2354/local_manifest -b cm-14.1 .repo/local_manifests
+	git clone https://github.com/msm2354/local_manifest -b dot-n .repo/local_manifests
 
 Then sync up with this command:
 
@@ -32,7 +32,7 @@ _Building from source_
 
 First:
 
-	cd ~/lineage
+	cd ~/dot
 
 Second:
 
