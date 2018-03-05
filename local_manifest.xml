@@ -11,7 +11,4 @@
   <!-- Kernel -->
   <project path="kernel/huawei/hwY635" name="msm2354/android_kernel_huawei" remote="github" revision="cm-14.1" />
     
-  <!-- Extra packages -->
-  <project path="device/qcom/common" name="LineageOS/android_device_qcom_common" remote="github" revision="cm-14.1" />
-  
 </manifest>
